@@ -1,0 +1,14 @@
+// Modify this file to create your tables for the Pasca language.
+
+// Special tokens are \space, \t and \n.
+ClassifierTable
+
+// In the transition table, the first state
+// is considered the input state.
+TransitionTable
+
+// If a state has an entry in this table then
+// it is considered an accept state.
+// "ignore" is a reserved type which indicates
+// that the token should be ignored.
+TokenTypeTable
