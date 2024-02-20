@@ -2,7 +2,7 @@ begin
 (**)
 (* a straightforward comment *)
 (** a crazy com*ment02 {}() ****)
-program a1 { 
+program a1 {
   var0 is 8;
   (* some crazy identifier names *)
   var1 var2 variable var1able

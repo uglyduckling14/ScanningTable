@@ -2,13 +2,110 @@
 
 // Special tokens are \space, \t and \n.
 ClassifierTable
+a letter
+b letter
+c letter
+d letter
+e letter
+f letter
+g letter
+h letter
+i letter
+j letter
+k letter
+l letter
+m letter
+n letter
+o letter
+p letter
+q letter
+r letter
+s letter
+t letter
+u letter
+v letter
+w letter
+x letter
+y letter
+z letter
+\space whitespace
+\t whitespace
+\n whitespace
+; delimiter
+{ delimiter
+} delimiter
+. delimiter
+0 zero
+1 integer
+2 integer
+3 integer
+4 integer
+5 integer
+6 integer
+7 integer
+8 integer
+9 integer
+( comment
+) close
+* asterisk
+' string
+" double
 
 // In the transition table, the first state
 // is considered the input state.
 TransitionTable
+s0 letter s1
+s1 letter s1
+s1 zero s1
+s1 integer s1
+s0 string s4
+s4 letter s4
+s4 zero s4
+s4 integer s4
+s4 delimiter s4
+s4 asterisk s4
+s4 double s4
+s4 comment s4
+s4 close s4
+s4 string s12
+s0 integer s5
+s5 zero s9
+s5 integer s9
+s0 delimiter s6
+s0 comment s10
+s10 asterisk s7
+s7 letter s7
+s7 integer s7
+s7 zero s7
+s7 string s7
+s7 delimiter s7
+s7 double s7
+s7 whitespace s7
+s7 comment s7
+s7 close s7
+s7 asterisk s8
+s8 whitespace s7
+s8 letter s7
+s8 integer s7
+s8 zero s7
+s8 string s7
+s8 delimiter s7
+s8 comment s7
+s8 double s7
+s8 asterisk s8
+s8 close s13
+s0 whitespace s3
+
 
 // If a state has an entry in this table then
 // it is considered an accept state.
 // "ignore" is a reserved type which indicates
 // that the token should be ignored.
 TokenTypeTable
+s1 identifier
+s12 string
+s9 integer
+s6 delimiter
+s13 ignore
+s3 ignore
+

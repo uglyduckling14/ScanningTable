@@ -40,8 +40,8 @@ public class Scanner {
 
     // Build catMap, mapping a character to a category.
     for (TableReader.CharCat cat : tableReader.getClassifier()) {
-      System.out.println("Character " + cat.getC() + " is of category "
-              + cat.getCategory());
+      //System.out.println("Character " + cat.getC() + " is of category "
+        //      + cat.getCategory());
       char2category.put(cat.getC(), cat.getCategory());
     }
 

@@ -48,39 +48,40 @@ public class Main {
     TableReader tableReader = new TableReader(tableFile);
     Scanner scanner = new Scanner(tableReader);
 
-//    {
-//      ScanStream ss = getDataStream("data/test1-pasca.txt");
-//
-//      testToken(scanner, ss, "identifier", "begin");
-//      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "identifier", "program");
-//      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "identifier", "a1");
+    {
+      ScanStream ss = getDataStream("data/test1-pasca.txt");
+
+      testToken(scanner, ss, "identifier", "begin");
+
+      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "identifier", "program");
+      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "identifier", "a1");
 //      testToken(scanner, ss, "ignore");
 //      testToken(scanner, ss, "delimiter", "{");
 //      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "identifier", "var0");
+      testToken(scanner, ss, "identifier", "var0");
 //      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "identifier", "is");
+      testToken(scanner, ss, "identifier", "is");
 //      testToken(scanner, ss, "ignore");
 //      testToken(scanner, ss, "integer", "8");
 //      testToken(scanner, ss, "delimiter", ";");
 //      testToken(scanner, ss, "ignore");
 //      testToken(scanner, ss, "ignore");
 //      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "identifier", "var1");
+      testToken(scanner, ss, "identifier", "var1");
 //      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "identifier", "var2");
+      testToken(scanner, ss, "identifier", "var2");
 //      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "identifier", "variable");
+      testToken(scanner, ss, "identifier", "variable");
 //      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "identifier", "var1able");
+      testToken(scanner, ss, "identifier", "var1able");
 //      testToken(scanner, ss, "ignore");
 //      testToken(scanner, ss, "delimiter", "}");
 //      testToken(scanner, ss, "ignore");
@@ -92,9 +93,9 @@ public class Main {
 //      testToken(scanner, ss, "ignore");
 //      testToken(scanner, ss, "string", "' a crazy string abc(){}*''4013'");
 //      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "identifier", "end");
+      testToken(scanner, ss, "identifier", "end");
 //      testToken(scanner, ss, "delimiter", ".");
-//    }
+    }
 //    {
 //      ScanStream ss = getDataStream("data/test2-pasca.txt");
 //      testToken(scanner, ss, "string", "'alks dfl;alsk k''jk{}'");
