@@ -49,11 +49,11 @@ z letter
 ) close
 * asterisk
 ' string
-" double
 
 // In the transition table, the first state
 // is considered the input state.
 TransitionTable
+s0 whitespace s0
 s0 letter s1
 s1 letter s1
 s1 zero s1
@@ -67,10 +67,19 @@ s4 asterisk s4
 s4 double s4
 s4 comment s4
 s4 close s4
+s4 whitespace s4
 s4 string s12
+s12 string s4
+s12 integer s4
+s12 letter s4
+s12 zero s4
+s12 delimiter s4
+s12 asterisk s4
+s12 comment s4
+s12 close s4
 s0 integer s5
-s5 zero s9
-s5 integer s9
+s5 zero s5
+s5 integer s5
 s0 delimiter s6
 s0 comment s10
 s10 asterisk s7
@@ -95,6 +104,7 @@ s8 double s7
 s8 asterisk s8
 s8 close s13
 s0 whitespace s3
+s3 whitespace s3
 
 
 // If a state has an entry in this table then
@@ -104,7 +114,7 @@ s0 whitespace s3
 TokenTypeTable
 s1 identifier
 s12 string
-s9 integer
+s5 integer
 s6 delimiter
 s13 ignore
 s3 ignore

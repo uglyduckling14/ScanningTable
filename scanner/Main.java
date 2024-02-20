@@ -63,57 +63,57 @@ public class Main {
       testToken(scanner, ss, "identifier", "program");
       testToken(scanner, ss, "ignore");
       testToken(scanner, ss, "identifier", "a1");
-//      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "delimiter", "{");
-//      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "delimiter", "{");
+      testToken(scanner, ss, "ignore");
       testToken(scanner, ss, "identifier", "var0");
-//      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "ignore");
       testToken(scanner, ss, "identifier", "is");
-//      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "integer", "8");
-//      testToken(scanner, ss, "delimiter", ";");
-//      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "integer", "8");
+      testToken(scanner, ss, "delimiter", ";");
+      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "ignore");
       testToken(scanner, ss, "identifier", "var1");
-//      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "ignore");
       testToken(scanner, ss, "identifier", "var2");
-//      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "ignore");
       testToken(scanner, ss, "identifier", "variable");
-//      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "ignore");
       testToken(scanner, ss, "identifier", "var1able");
-//      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "delimiter", "}");
-//      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "integer", "123");
-//      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "integer", "1203");
-//      testToken(scanner, ss, "ignore");
-//      testToken(scanner, ss, "string", "' a crazy string abc(){}*''4013'");
-//      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "delimiter", "}");
+      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "integer", "123");
+      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "integer", "1203");
+      testToken(scanner, ss, "ignore");
+      testToken(scanner, ss, "string", "' a crazy string abc(){}*''4013'");
+      testToken(scanner, ss, "ignore");
       testToken(scanner, ss, "identifier", "end");
-//      testToken(scanner, ss, "delimiter", ".");
+      testToken(scanner, ss, "delimiter", ".");
     }
-//    {
-//      ScanStream ss = getDataStream("data/test2-pasca.txt");
-//      testToken(scanner, ss, "string", "'alks dfl;alsk k''jk{}'");
-//    }
-//    {
-//      ScanStream ss = getDataStream("data/err1-pasca.txt");
-//      testToken(scanner, ss, "ignore", "(* a comment *)");
-//      testToken(scanner, ss, "ignore", " ");
-//      testToken(scanner, ss, null);
-//    }
-//    {
-//      ScanStream ss = getDataStream("data/err2-pasca.txt");
-//      testToken(scanner, ss, null);
-//    }
-//    {
-//      ScanStream ss = getDataStream("data/err3-pasca.txt");
-//      testToken(scanner, ss, null);
-//    }
+    {
+      ScanStream ss = getDataStream("data/test2-pasca.txt");
+      testToken(scanner, ss, "string", "'alks dfl;alsk k''jk{}'");
+    }
+    {
+      ScanStream ss = getDataStream("data/err1-pasca.txt");
+      testToken(scanner, ss, "ignore", "(* a comment *)");
+      testToken(scanner, ss, "ignore", " ");
+      testToken(scanner, ss, null);
+    }
+    {
+      ScanStream ss = getDataStream("data/err2-pasca.txt");
+      testToken(scanner, ss, null);
+    }
+    {
+      ScanStream ss = getDataStream("data/err3-pasca.txt");
+      testToken(scanner, ss, null);
+    }
   }
 
   //--------------------------------------------------------------------------------
